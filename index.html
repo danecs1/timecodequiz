@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timer code quiz:</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h4>Timer code quiz: <span id="count">60</span></h4>
+      <div class="container" id="startbutton">
+        <button id="start" onclick="startquiz()">Start</button>
+      </div>
+
+      <div id="questionArea">
+        <h4 id="question"></h4>
+        <input type="text" id="answer" />
+
+        <button onclick="submit()">Submit</button>
+      </div>
+      <div id="score" style="display: none;">
+        <input type="text" id="name" />
+        <button onclick="submitScore()">Enter Name</button>
+      </div>
+      <div id="finalScore"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
